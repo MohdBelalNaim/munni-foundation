@@ -2,7 +2,7 @@ import { VscQuote } from "react-icons/vsc";
 import { PiHandHeart } from "react-icons/pi";
 import { TbLayoutGridAdd } from "react-icons/tb";
 import { FaChild } from "react-icons/fa";
-import { BsArrowRight} from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 
 const Home = () => {
@@ -189,6 +189,43 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <footer className="flex flex-col items-center">
+        <div className="flex justify-between w-full mb-10 mt-14">
+          <div className="ml-20">
+            <div className="mb-5">
+              <h2 className="text-lg font-bold mb-4">Newsletter</h2>
+              <p className="text-md">Fill in your email to subscribe to our newsletter.</p>
+            </div>
+            <form className="newsletter-form flex mb-4" action="#">
+              <input type="email" placeholder="Email" className="bg-gray-200 px-4 py-2 focus:outline-none rounded-tl-md rounded-bl-md" />
+              <button type="submit" className="bg-yellow-300 text-black px-4 py-2 rounded-tr-md rounded-br-md">Subscribe</button>
+            </form>
+          </div>
+          <div className="mr-20 flex items-start">
+            <div className="flex flex-col justify-start">
+              <p className="mr-20 text-md font-semibold mb-5">About us</p>
+              <p className="mr-20 text-md font-semibold mb-5">Campaigns</p>
+              <p className="mr-20 text-md font-semibold mb-5">Contact Us</p>
+            </div>
+            <div className="flex flex-col justify-start">
+              <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?w=740&t=st=1708187653~exp=1708188253~hmac=bf14d986afee0e0a7a0df2ef236347df1c37fe4434fef99fedf474eed6e96dd2" alt="Twitter Icon" className="w-7 h-7 mb-3" />
+              <img src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-902qq7tz.png" alt="Facebook Icon" className="w-7 h-7 mb-3" />
+              <img src="https://image.similarpng.com/very-thumbnail/2021/01/Black-linkedin-logo-design-on-transparent-background-PNG.png" alt="LinkedIn Icon" className="w-7 h-7" />
+            </div>
+          </div>
+        </div>
+        <hr className="h-1 bg-yellow-300" style={{ width: '1350px' }} />
+        <div className="mt-10 mb-14 flex justify-between w-full">
+          <div>
+            <p className="ml-20 text-md">&copy; Copyright</p>
+          </div>
+          <div className="flex">
+            <p className="text-md mr-9">Privacy Policy</p>
+            <p className="text-md mr-20">Terms & Conditions</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
