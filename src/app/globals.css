@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 :root {
   --blue:#202e52
 }
@@ -39,4 +39,105 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.footer{
+  background-color: #F9F5E8;
+  height: 270px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  column-gap: 28.5rem;
+  padding-top:20px;
+}
+.footer-bottom-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+.footer-bottom-right{
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+}
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 14rem;
+  border-bottom-style: solid;
+  border-bottom-color: #FFDA31;
+  border-bottom-width: 1px;
+}
+
+.footer-top-left,.footer-top-right{
+  display: flex;
+  flex-direction: column;
+}
+.footer-top-left-header{
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer-top-left-text{
+  font-size: 12px;
+  padding-top: 5px;
+}
+.footer-top-left-textbox{
+  display: flex;
+  flex-direction: row;
+  margin:15px 0 35px 0;
+}
+.footer-top-left-textbox-input{
+  width: 300px;
+  padding: 12px 20px;
+  font-size: 12px;
+  background-color:  #EEEBE1;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.footer-top-left-textbox-input::placeholder{
+  color: #525252 ;
+}
+.footer-top-left-textbox-button{
+  width: 100px;
+  background-color: #FFDA31;
+  padding: 12px 20px;
+  font-size: 12px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.footer-top-right{
+  row-gap: 12px;
+}
+.footer-top-right-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 45px;
+  align-items: center;
+}
+
+.footer-top-right-contact-text{
+  font-weight: 500;
+  font-size: 12px;
+}
+.footer-top-right-contact-icon svg{
+  height: 22px;
+  width: 22px;
+}
+.footer-top-right-contact-text:hover, .footer-top-right-contact-icon:hover,.footer-bottom-right div:hover,.footer-bottom-left:hover{
+  cursor: pointer;
 }
