@@ -22,7 +22,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email"
-              className="bg-[#EEEBE1]	 text-white px-4 py-2 rounded-l focus:outline-none w-2/4"
+              className="bg-[#EEEBE1]	 text-black px-4 py-2 rounded-l focus:outline-none w-2/4"
             />
             <button className="bg-yellow-300 text-black px-4 py-2  rounded-r text-sm">
               Subscribe
