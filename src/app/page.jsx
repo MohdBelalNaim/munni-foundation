@@ -1,9 +1,10 @@
-import { VscQuote } from "react-icons/vsc";
-import { PiHandHeart } from "react-icons/pi";
-import { TbLayoutGridAdd } from "react-icons/tb";
-import { FaChild } from "react-icons/fa";
-import { BsArrowRight} from "react-icons/bs";
+import {VscQuote} from "react-icons/vsc";
+import {PiHandHeart} from "react-icons/pi";
+import {TbLayoutGridAdd} from "react-icons/tb";
+import {FaChild} from "react-icons/fa";
+import {BsArrowRight} from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
           <div className="container mx-auto">
             <div className="text-light text-white py-12 flex justify-between items-center">
               <div className="flex items-end gap-3">
-                <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
+                <img src="/logo.svg" alt="Ni load hua" className="w-[8%]"/>
                 <div className="text-sm">Munni Foundation</div>
               </div>
               <div className="flex gap-8 text-sm items-center">
@@ -28,7 +29,7 @@ const Home = () => {
                 <div>Contact</div>
                 <div>Get Involved</div>
                 <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
-                  Donate <PiHandHeart className="text-xl" />
+                  Donate <PiHandHeart className="text-xl"/>
                 </div>
               </div>
             </div>
@@ -77,7 +78,7 @@ const Home = () => {
           </div>
           <div className="text-black grid place-items-center py-16">
             <div className="text-3xl italic w-[52%]">
-              <VscQuote className="text-3xl" />
+              <VscQuote className="text-3xl"/>
               There is so much joy you can share in this world
             </div>
           </div>
@@ -88,21 +89,21 @@ const Home = () => {
         <div className="bg-secondary px-12 py-16 text-white">
           <section className="grid grid-cols-3 xl:mx-auto xl:container">
             <div className="flex items-center justify-center gap-3">
-              <PiHandHeart className="text-6xl" />
+              <PiHandHeart className="text-6xl"/>
               <div>
                 <div className="text-3xl font-medium">2324+</div>
                 <div className="">Donations Recieved</div>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <TbLayoutGridAdd className="text-6xl" />
+              <TbLayoutGridAdd className="text-6xl"/>
               <div>
                 <div className="text-3xl font-medium">393</div>
                 <div className="">Coordination Plays</div>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <FaChild className="text-6xl" />
+              <FaChild className="text-6xl"/>
               <div>
                 <div className="text-3xl font-medium">2323+</div>
                 <div className="">Childrens Helped</div>
@@ -116,12 +117,12 @@ const Home = () => {
         <div className="text-2xl font-medium text-secondary flex items-center justify-between">
           Active Fundraisers
           <button className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2">
-            All Campaigns <BsArrowRight />
+            All Campaigns <BsArrowRight/>
           </button>
         </div>
         <div className="grid grid-cols-3 gap-4 mt-4">
           {"abc".split("").map((item, index) => {
-            return <CampaignCard key={index} index={index} />;
+            return <CampaignCard key={index} index={index}/>;
           })}
         </div>
       </section>
@@ -184,11 +185,12 @@ const Home = () => {
               </div>
             </div>
             <button className="bg-primary text-black text-sm px-8 py-3 rounded-full flex items-center gap-3">
-              Donate Tip <PiHandHeart className="text-lg" />
+              Donate Tip <PiHandHeart className="text-lg"/>
             </button>
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
