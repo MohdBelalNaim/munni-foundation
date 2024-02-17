@@ -4,10 +4,11 @@ import { TbLayoutGridAdd } from "react-icons/tb";
 import { FaChild } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <section
         style={{
           backgroundImage:
@@ -32,6 +33,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="h-[500px] grid content-center justify-items-start max-sm:h-[260px] max-sm:content-start max-sm:px-4">
               <div className="font-medium text-white text-5xl w-[26%] max-sm:w-full max-sm:text-2xl">
                 Children &apos;s joy is play
@@ -187,7 +189,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+
+      <Footer />
+    </>
   );
 };
 
