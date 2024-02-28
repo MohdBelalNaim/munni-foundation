@@ -8,7 +8,6 @@ import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
 import React,{useState} from "react";
 import Login from "@/components/Login";
-
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
   return (
