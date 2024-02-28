@@ -5,7 +5,7 @@ import { PiChartLineUp, PiHandHeart } from "react-icons/pi";
 const Details = () => {
   return (
     <>
-      <div className="fixed inset-0 glass z-50 grid place-items-center">
+      {/* <div className="fixed inset-0 glass z-50 grid place-items-center">
         <div className="bg-white rounded-md w-[min(440px,96%)]">
           <div className="text-lg font-medium text-center p-3 border-b">
             Choose a donation amount
@@ -51,8 +51,9 @@ const Details = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="sm:px-32 container mx-auto text-light text-black py-5 border-b border-gray-300 flex justify-between items-center max-sm:py-8">
+      </div> */}
+
+      <div className="sm:px-15 container mx-auto text-light text-black py-5  px-6 border-b border-gray-300 flex justify-between items-center max-sm:px-4 max-sm:py-6">
         <div className="flex items-end gap-3">
           <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
           <div className="text-sm">Munni Foundation</div>
@@ -67,11 +68,14 @@ const Details = () => {
           </div>
         </div>
       </div>
-      <div className="sm:px-32 mx-auto container">
-        <div className="text-3xl font-medium mt-5 mb-4">
+
+      <div className="py-5 px-5 container max-sm:px-4 max-sm:py-6">
+        <div className="text-3xl font-medium mt-4 mb-4 max-sm:mb-0 max-sm:mt-0">
           Adamas against Neuroblastoma
         </div>
-        <div className="grid gap-5 grid-cols-[1.3fr,0.7fr]">
+
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-[1.3fr,0.7fr]">
+          
           <div>
             <img
               src="https://muslimhands.ca/_ui/images/fc575db486cb.jpg"
@@ -168,6 +172,7 @@ const Details = () => {
               Report this fundraiser
             </div>
           </div>
+
           <div>
             <div className="border shadow-md sticky top-5 rounded-lg mt-4 p-4 grid gap-y-3">
               <div className="text-xl">
@@ -218,11 +223,10 @@ const Details = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
-      <div className="bg-slate-50 container mt-5 mx-auto sm:px-32 py-24">
-        <div></div>
-      </div>
+      
       <Footer />
     </>
   );
