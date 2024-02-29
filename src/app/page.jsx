@@ -1,3 +1,4 @@
+"use client"; 
 import { VscQuote } from "react-icons/vsc";
 import { PiHandHeart } from "react-icons/pi";
 import { TbLayoutGridAdd } from "react-icons/tb";
@@ -5,8 +6,10 @@ import { FaChild } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
-
+import React,{useState} from "react";
+import Login from "@/components/Login";
 const Home = () => {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <>
       <section
@@ -28,6 +31,7 @@ const Home = () => {
                 <div>About</div>
                 <div>Contact</div>
                 <div>Get Involved</div>
+                <div onClick={() => setShowLogin(!showLogin)} style={{cursor:'pointer'}}>Login</div>
                 <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
                   Donate <PiHandHeart className="text-xl" />
                 </div>
@@ -193,7 +197,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {showLogin==true?<Login></Login>:null}
       <Footer />
     </>
     );
