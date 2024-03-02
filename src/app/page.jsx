@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
 import React,{useState} from "react";
-import Login from "@/components/Login";
+import SignIn from "@/components/SignIn";
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
   return (
@@ -197,7 +197,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {showLogin==true?<Login></Login>:null}
+      {showLogin==true?<SignIn/>:null}
       <Footer />
     </>
     );
