@@ -7,24 +7,23 @@ function Signup(){
     <Google></Google>
     <p className="p-3 text-center">or</p>
     <div>
-        <input type="text" placeholder="First Name" className="w-full p-2 mb-4 rounded border-none bg-gray-300 text-black text-base" />
+        <input type="text" placeholder="First Name" className="bg-gray-100 border-gray-300 w-full py-3 px-4 mt-3 shadow-inner rounded-lg" />
     </div>
     <div>
-        <input type="text" placeholder="Last Name" className="w-full p-2 mb-4 rounded border-none bg-gray-300 text-black text-base" />
+        <input type="text" placeholder="Last Name" className="bg-gray-100 border-gray-300 w-full py-3 px-4 mt-3 shadow-inner rounded-lg" />
     </div>
     <div>
-        <input type="email" placeholder="Email Address" className="w-full p-2 mb-4 rounded border-none bg-gray-300 text-black text-base" />
+        <input type="email" placeholder="Email Address" className="bg-gray-100 border-gray-300 w-full py-3 px-4 mt-3 shadow-inner rounded-lg" />
     </div>
     <div>
-        <input type="password" placeholder="Password" className="w-full p-2 mb-4 rounded border-none bg-gray-300 text-black text-base" />
+        <input type="password" placeholder="Password" className="mb-3 bg-gray-100 border-gray-300 w-full py-3 px-4 mt-3 shadow-inner rounded-lg" />
     </div>
     <div className="text-xs">
         <input type="checkbox" id="termsCheckbox" />
         <label htmlFor="termsCheckbox"><span> </span>I&apos;d like to receive awesome emails and updates from GiveUmma</label>
     </div>
-    <button className="w-full bg-black text-white border border-black rounded p-3 mt-5" onClick={() => setLoggedIn(1)}>Sign Up</button>
-    <p className="py-3 text-center text-base">Already have an account? Login</p>
-    <p className="text-center text-sm">By continuing, you agree with GiveUmma&apos;s Terms of Use and Privacy Policy</p>
+    <button className="w-full bg-black text-white border border-black rounded-lg p-2 mt-5">Sign Up</button>
+    
     </>
     );
 }

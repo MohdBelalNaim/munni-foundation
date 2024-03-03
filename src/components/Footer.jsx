@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-yellow-50 py-12 px-12  max-sm:px-4  max-sm:py-8">
+    <footer className="bg-yellow-50 py-12 px-12 lg:px-36 max-sm:px-4  max-sm:py-8">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between">
         <div className="lg:w-1/2">
           <div className="text-center lg:text-left">

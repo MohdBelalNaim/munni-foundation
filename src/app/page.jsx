@@ -19,7 +19,7 @@ const Home = () => {
         }}
         className="bg-cover "
       >
-        <div className="inset-0 backdrop-brightness-50">
+        <div className="inset-0 backdrop-brightness-50 lg:px-28">
           <div className="container mx-auto">
             <div className="text-light text-white py-12 flex justify-between items-center max-sm:py-8">
               <div className="flex items-end gap-3 px-6 max-sm:px-4">
@@ -57,7 +57,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row lg:pl-28">
           <div className="grid place-items-center lg:container lg:mx-auto lg:w-3/5">
             <div className="bg-white-300 py-6 px-6 max-sm:px-4">
               <div className="text-2xl font-medium text-secondary">
@@ -75,7 +75,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="text-black grid place-items-center lg:container lg:mx-auto lg:w-2/5 p-6 max-sm:px-4 bg-yellow-300">
+          <div className="text-black grid place-items-center lg:container lg:mx-auto lg:w-2/5 py-6 pr-12 max-sm:px-4 bg-primary">
             <div className="text-3xl italic w-full lg:w-[52%] text-center">
               <VscQuote className="text-3xl" />
               There is so much joy you can share in this world
@@ -85,7 +85,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="bg-secondary px-12 py-4 text-white">
+        <div className="bg-secondary px-12 py-4 text-white lg:px-28">
           <section className="grid grid-cols-3 mx-auto container max-sm:grid-cols-1">
             <div className="flex items-center justify-center gap-3">
               <PiHandHeart className="text-6xl" />
@@ -113,7 +113,7 @@ const Home = () => {
       </section>
 
       <section className="lg:px-6 container mx-auto px-6 py-6 max-sm:px-4 ">
-        <div className="text-2xl px-3 font-medium text-secondary flex items-center justify-between">
+        <div className="text-2xl px-3 font-medium text-secondary flex items-center justify-between lg:px-28">
           Active Fundraisers
           <div className="max-sm:hidden max-sm:flex">
             <button className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2">
@@ -121,7 +121,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 mt-4 max-sm:grid-cols-1 max-sm:px-2">
+        <div className="grid grid-cols-3 gap-4 mt-4 max-sm:grid-cols-1 max-sm:px-2 lg:px-28">
           {"abc".split("").map((item, index) => {
             return <CampaignCard key={index} index={index} />;
           })}
@@ -134,7 +134,7 @@ const Home = () => {
       </section>
 
       <section className="bg-orange-100 p-6">
-        <div className=" container mx-auto grid grid-cols-2 max-sm:grid-cols-1">
+        <div className=" container mx-auto grid grid-cols-2 max-sm:grid-cols-1 lg:px-28">
           <div className="grid gap-y-6 max-sm:gap-y-4">
             <div className="font-medium text-4xl w-[20%] leading-tight text-orange-500 max-sm:w-full max-sm:text-[22px] max-sm:text-center">
               Support the children
@@ -197,8 +197,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {showLogin==true?<SignIn/>:null}
       <Footer />
+      
     </>
     );
 };
