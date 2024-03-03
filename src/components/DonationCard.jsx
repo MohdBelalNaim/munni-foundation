@@ -1,9 +1,15 @@
-import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
 
 function DonationCard(){
-    return(
+  const [isVisible, setIsVisible] = useState(true)
+  return(
+    <>
+      {isVisible && (
         <div className="fixed inset-0 glass z-50 grid place-items-center">
         <div className="bg-white rounded-md w-[min(440px,96%)]">
+        <FontAwesomeIcon icon={faTimes} onClick={() => setIsVisible(false)} className="cursor-pointer text-black font-bold px-4 pt-4" />
           <div className="text-lg font-medium text-center p-3 border-b">
             Choose a donation amount
           </div>
@@ -13,7 +19,6 @@ function DonationCard(){
               <input type="radio" name="amount" className="checked:bg-secondary checked:text-white appearance-none before:content-['$299'] hover:bg-[#202e52] hover:text-white cursor-pointer border text-sm px-6 py-2 rounded-full"/>
               <input type="radio" name="amount" className="checked:bg-secondary checked:text-white appearance-none before:content-['$999'] hover:bg-[#202e52] hover:text-white cursor-pointer border text-sm px-6 py-2 rounded-full"/>
               <input type="radio" name="amount" className="checked:bg-secondary checked:text-white appearance-none before:content-['Other'] hover:bg-[#202e52] hover:text-white cursor-pointer border text-sm px-6 py-2 rounded-full"/>  
-              
             </div>
             <input
               type="text"
@@ -43,12 +48,14 @@ function DonationCard(){
               <button className="text-sm px-4 py-2 bg-secondary text-white rounded-full">Proceed to Pay</button>
             </div>
             <div className="text-xs mt-4">
-              By continung, You agree to terms and conditions of Munni Welfare Foundation
+              By continuing, You agree to terms and conditions of Munni Welfare Foundation
             </div>
           </div>
         </div>
       </div>
-    );
+      )}
+    </>
+  );
 }
 
 export default DonationCard;

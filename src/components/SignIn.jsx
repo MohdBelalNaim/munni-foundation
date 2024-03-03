@@ -18,8 +18,13 @@ function SignIn() {
                             <span onClick={() => setLoggedIn(1)} className="cursor-pointer text-black font-bold pl-10">Login</span>
                             <span onClick={() => setLoggedIn(2)} className="cursor-pointer text-black font-bold pr-10">Signup</span>
                         </h3>
-                        {loggedIn === 1 ?<Login/>:
-                        loggedIn === 2 ?<Signup/>:null
+                        {loggedIn === 1 ?
+                        <><Login/>
+                        <p className="py-3 text-center text-base">Don&apos;t have an account? <span className="cursor-pointer" onClick={() => setLoggedIn(2)}>Signup</span></p></>:
+                        loggedIn === 2 ?
+                        <><Signup/>
+                        <p className="py-3 text-center text-base">Already have an account? <span className="cursor-pointer" onClick={() => setLoggedIn(1)}>Login</span></p>
+                        <p className="text-center text-sm">By continuing, you agree with GiveUmma&apos;s Terms of Use and Privacy Policy</p></>:null
                         }
                     </div>
                 </div>   

@@ -1,3 +1,4 @@
+"use client"; 
 import Footer from "@/components/Footer";
 import DonationCard from "@/components/DonationCard";
 import React from "react";
@@ -8,7 +9,7 @@ const Details = () => {
     <>
       <DonationCard/>
       
-      <div className="sm:px-15 container mx-auto text-light text-black py-5  px-6 border-b border-gray-300 flex justify-between items-center max-sm:px-4 max-sm:py-6">
+      <div className="sm:px-15 container mx-auto text-light text-black py-5 px-6 border-b border-gray-300 flex justify-between items-center max-sm:px-4 lg:px-36 max-sm:py-6">
         <div className="flex items-end gap-3">
           <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
           <div className="text-sm">Munni Foundation</div>
@@ -24,13 +25,11 @@ const Details = () => {
         </div>
       </div>
 
-      <div className="py-5 px-5 container max-sm:px-4 max-sm:py-6">
+      <div className="py-5 px-5 container max-sm:px-4 lg:px-36 max-sm:py-6">
         <div className="text-3xl font-medium mt-4 mb-4 max-sm:mb-0 max-sm:mt-0">
           Adamas against Neuroblastoma
         </div>
-
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-[1.3fr,0.7fr]">
-          
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-[1.3fr,0.7fr]">     
           <div>
             <img
               src="https://muslimhands.ca/_ui/images/fc575db486cb.jpg"
