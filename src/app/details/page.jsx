@@ -1,6 +1,7 @@
 "use client"; 
 import Footer from "@/components/Footer";
 import DonationCard from "@/components/DonationCard";
+import Navigation from "@/components/NavigationBar";
 import React from "react";
 import { BsFlag, BsPerson, BsPhone,  BsShieldCheck, BsStar, BsTags } from "react-icons/bs";
 import { PiChartLineUp, PiHandHeart } from "react-icons/pi";
@@ -9,21 +10,7 @@ const Details = () => {
     <>
       <DonationCard/>
       
-      <div className="sm:px-15 container mx-auto text-light text-black py-5 px-6 border-b border-gray-300 flex justify-between items-center max-sm:px-4 lg:px-36 max-sm:py-6">
-        <div className="flex items-end gap-3">
-          <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
-          <div className="text-sm">Munni Foundation</div>
-        </div>
-        <div className="max-sm:hidden flex gap-8 text-sm items-center">
-          <div>Home</div>
-          <div>About</div>
-          <div>Contact</div>
-          <div>Get Involved</div>
-          <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
-            Donate <PiHandHeart className="text-xl" />
-          </div>
-        </div>
-      </div>
+      <Navigation/>
 
       <div className="py-5 px-5 container max-sm:px-4 lg:px-36 max-sm:py-6">
         <div className="text-3xl font-medium mt-4 mb-4 max-sm:mb-0 max-sm:mt-0">

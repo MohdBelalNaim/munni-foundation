@@ -8,6 +8,9 @@ import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
 import React,{useState} from "react";
 import SignIn from "@/components/SignIn";
+import Navigation from "@/components/NavigationBar";
+import Link from 'next/link'
+
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
   return (
@@ -27,9 +30,9 @@ const Home = () => {
                 <div className="text-sm">Munni Foundation</div>
               </div>
               <div className="max-sm:hidden flex gap-8 text-sm px-6 items-center">
-                <div>Home</div>
+                <div><Link href="/">Home</Link></div>
                 <div>About</div>
-                <div>Contact</div>
+                <div><Link href="/contact">Contact</Link></div>
                 <div>Get Involved</div>
                 <div onClick={() => setShowLogin(!showLogin)} style={{cursor:'pointer'}}>Login</div>
                 <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
