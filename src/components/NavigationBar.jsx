@@ -11,7 +11,7 @@ function Navigation(){
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
                 <div className="text-sm">Munni Welfare Foundation</div>
             </div>
-            <div className="max-sm:hidden flex gap-8 text-sm items-center">
+            <div className="max-sm:hidden flex gap-8 md:gap-6 text-sm items-center">
             <div><Link href="/">Home</Link></div>
                 <div>About</div>
                 <div><Link href="/contact">Contact</Link></div>

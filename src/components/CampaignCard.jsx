@@ -7,9 +7,11 @@ const CampaignCard = ({index}) => {
         className="w-full h-48 object-cover"
         alt=""
       />
+
       <div className="px-4 text-sm mt-3">
         Help to educate 14,000 girl childs in delhi with a big dream
       </div>
+
       <div className="px-4 flex gap-6 items-center mt-3">
         <div className="flex items-center gap-2">
           <BsPeople className="text-lg" />
@@ -24,11 +26,13 @@ const CampaignCard = ({index}) => {
           </div>
         </div>
       </div>
+
       <div className="px-4 mt-3 mb-3">
         <div className="w-full h-1 bg-gray-300 rounded-full">
           <div className="w-[40%] h-1 bg-secondary rounded-full"></div>
         </div>
       </div>
+
       <div className="px-4 flex mb-5 justify-between items-center">
         <div>
           <div className="text-lg font-bold">₹14,500</div>
@@ -40,6 +44,7 @@ const CampaignCard = ({index}) => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };
