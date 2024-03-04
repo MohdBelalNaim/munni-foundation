@@ -9,7 +9,7 @@ function Navigation(){
         <div className="sm:px-15 container mx-auto text-light text-black py-5 px-6 border-b border-gray-300 flex justify-between items-center max-sm:px-4 lg:px-36 max-sm:py-6">
             <div className="flex items-end gap-3">
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
-                <div className="text-sm">Munni Foundation</div>
+                <div className="text-sm">Munni Welfare Foundation</div>
             </div>
             <div className="max-sm:hidden flex gap-8 text-sm items-center">
             <div><Link href="/">Home</Link></div>

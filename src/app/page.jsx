@@ -27,7 +27,7 @@ const Home = () => {
             <div className="text-light text-white py-12 flex justify-between items-center max-sm:py-8">
               <div className="flex items-end gap-3 px-6 max-sm:px-4">
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
-                <div className="text-sm">Munni Foundation</div>
+                <div className="text-sm">Munni Welfare Foundation</div>
               </div>
               <div className="max-sm:hidden flex gap-8 text-sm px-6 items-center">
                 <div><Link href="/">Home</Link></div>
