@@ -16,7 +16,7 @@ function Contact (){
                     <h1 className="lg:pt-20 lg:pb-8 pb-4 pt-8 font-bold text-white text-2xl lg:text-4xl">Contact Us</h1>
                     <p className="lg:text-xl text-white mb-4">We are here to help you and answer any questions you may have. Here is how to reach us!</p>
                 </div>
-                <div className="max-w-xs">
+                <div className="max-w-xs mx-auto lg:mx-0">
                     <img src="https://s3.amazonaws.com/i.snag.gy/m4ouI5.jpg" alt="Image Description" className="w-full h-auto" />
                 </div>
             </div>

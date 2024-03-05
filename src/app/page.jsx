@@ -125,7 +125,7 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 mt-4 max-sm:grid-cols-1 max-sm:px-2 lg:px-28">
           {"abc".split("").map((item, index) => {
-            return <Link href="/details"><CampaignCard key={index} index={index} /></Link>;
+            return <Link href="/details" key={index}><CampaignCard key={index} index={index} /></Link>;
           })}
         </div>
         <div className="hidden max-sm:flex mt-4 flex justify-center">
