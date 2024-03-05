@@ -1,3 +1,4 @@
+"use client";
 "use client"; 
 import { useState } from "react";
 import { VscQuote } from "react-icons/vsc";
@@ -7,6 +8,7 @@ import { FaChild } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
+import React, { useState } from "react";
 import SignIn from "@/components/SignIn";
 import Link from 'next/link';
 
@@ -33,7 +35,12 @@ const Home = () => {
                 <div>About</div>
                 <div><Link href="/contact">Contact</Link></div>
                 <div>Get Involved</div>
-                <div onClick={() => setShowLogin(!showLogin)} style={{cursor:'pointer'}}>Login</div>
+                <div
+                  onClick={() => setShowLogin(!showLogin)}
+                  style={{ cursor: "pointer" }}
+                >
+                  Login
+                </div>
                 <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
                   Donate <PiHandHeart className="text-xl" />
                 </div>
@@ -129,10 +136,9 @@ const Home = () => {
             return <Link href="/details" key={index}><CampaignCard key={index} index={index} /></Link>;
           })}
         </div>
-        {/* Dont mess up with this button Tam */}
-        <div className="hidden max-sm:flex mb-4 flex justify-center">
-          <button >
-            <Link href="/campaign" className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"> All Campaigns <BsArrowRight /></Link>
+        <div className="hidden max-sm:flex mt-4 justify-center">
+          <button className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2">
+            All Campaigns <BsArrowRight />
           </button>
         </div>
       </section>
