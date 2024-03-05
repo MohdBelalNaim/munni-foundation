@@ -20,8 +20,8 @@ function CampaignPage(){
         <section className="mb-14">
         
         <div className="grid grid-cols-3 gap-4 mt-4 max-sm:grid-cols-1 max-sm:px-2 lg:px-36 md:px-4">
-          {"abc".split("").map((item, index) => {
-            return <CampaignCard key={index} index={index} />;
+          {"abcdef".split("").map((item, index) => {
+            return <CampaignCard key={index} index={index} name={index} />;
           })}
         </div>
         </section>

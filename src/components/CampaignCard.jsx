@@ -1,9 +1,9 @@
 import { BsCalendar, BsPeople } from "react-icons/bs";
-const CampaignCard = ({index}) => {
+const CampaignCard = (props) => {
   return (
     <div className="rounded-xl overflow-hidden border border-gray-200 bg-white">
       <img
-        src={`https://picsum.photos/400?${index}`}
+        src={`https://picsum.photos/400?${props.index}`}
         className="w-full h-48 object-cover"
         alt=""
       />
@@ -16,7 +16,7 @@ const CampaignCard = ({index}) => {
         <div className="flex items-center gap-2">
           <BsPeople className="text-lg" />
           <div className="text-xs">
-            3 <span className="text-gray-500">Givers</span>
+            3 <span className="text-gray-500">Givers {props.name}</span>
           </div>
         </div>
         <div className="flex items-center gap-2">

@@ -21,14 +21,14 @@ const Home = () => {
         }}
         className="bg-cover"
       >
-        <div className="inset-0 backdrop-brightness-50 lg:px-28">
-          <div className="container mx-auto">
-            <div className="text-light text-white py-12 flex justify-between items-center max-sm:py-8">
-              <div className="flex items-end gap-3 px-6 max-sm:px-4">
+        <div className="inset-0 backdrop-brightness-50 ">
+          <div className="">
+            <div className="text-light text-white flex justify-between items-center lg:px-36 lg:py-14 px-4 py-8">
+              <div className="flex items-end gap-3 ">
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
                 <div className="text-sm">Munni Welfare Foundation</div>
               </div>
-              <div className="max-sm:hidden flex lg:gap-8 gap-4 text-sm px-6 items-center">
+              <div className="max-sm:hidden flex lg:gap-8 gap-4 text-sm items-center">
                 <div><Link href="/">Home</Link></div>
                 <div>About</div>
                 <div><Link href="/contact">Contact</Link></div>
@@ -40,7 +40,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="h-[500px] grid content-center justify-items-start max-sm:h-[260px] max-sm:content-start px-6 max-sm:px-4">
+            <div className="h-[500px] grid content-center justify-items-start max-sm:h-[260px] max-sm:content-start lg:px-36 lg:py-14 px-4 py-8">
               <div className="font-medium text-white text-5xl w-[26%] max-sm:w-full max-sm:text-2xl">
                 Children&apos;s joy is play
               </div>
@@ -59,9 +59,9 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="flex flex-col lg:flex-row ">
-          <div className="grid place-items-center lg:container lg:mx-auto lg:pl-28 lg:w-3/5">
-            <div className="bg-white-300 p-6 max-sm:px-4 ">
+        <div className="flex flex-col lg:flex-row">
+          <div className="grid place-items-center lg:container lg:w-3/5 lg:pl-36 lg:pr-8 p-4">
+            <div className="bg-white-300 ">
               <div className="text-2xl font-medium text-secondary">
                 Smile challenge
               </div>
@@ -77,7 +77,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="text-black grid place-items-center lg:container lg:mx-auto  lg:w-2/5 p-6 max-sm:px-4 bg-primary">
+          <div className="text-black grid place-items-center lg:container lg:w-2/5 bg-primary lg:pr-36 py-4 px-4">
             <div className="text-3xl italic w-full lg:w-[52%] text-center">
               <VscQuote className="text-3xl" />
               There is so much joy you can share in this world
@@ -86,8 +86,9 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Dont mess up with this section Tam */}
       <section>
-        <div className="bg-secondary px-12 py-4 text-white lg:px-28">
+        <div className="bg-secondary px-12 py-4 text-white lg:px-36">
           <section className="grid grid-cols-3 mx-auto container max-sm:grid-cols-1">
             <div className="flex items-center justify-center gap-3">
               <PiHandHeart className="text-6xl" />
@@ -114,8 +115,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container mx-auto p-6 max-sm:px-4 ">
-        <div className="text-2xl px-3 font-medium text-secondary flex items-center justify-between lg:px-28">
+      <section className="lg:px-36 px-4">
+        <div className="text-2xl font-medium text-secondary flex items-center justify-between lg:my-8 mt-4">
           Active Fundraisers
           <div className="max-sm:hidden max-sm:flex">
             <button >
@@ -123,26 +124,27 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 mt-4 max-sm:grid-cols-1 max-sm:px-2 lg:px-28">
+        <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-1 lg:my-8 my-4">
           {"abc".split("").map((item, index) => {
             return <Link href="/details" key={index}><CampaignCard key={index} index={index} /></Link>;
           })}
         </div>
-        <div className="hidden max-sm:flex mt-4 flex justify-center">
+        {/* Dont mess up with this button Tam */}
+        <div className="hidden max-sm:flex mb-4 flex justify-center">
           <button >
             <Link href="/campaign" className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"> All Campaigns <BsArrowRight /></Link>
           </button>
         </div>
       </section>
 
-      <section className="bg-orange-100 p-8">
-        <div className=" container mx-auto grid grid-cols-2 max-sm:grid-cols-1 lg:px-28">
+      <section className="bg-orange-100">
+        <div className="grid grid-cols-2 max-sm:grid-cols-1 lg:px-36 lg:py-14 p-4">
           <div className="grid gap-y-6 max-sm:gap-y-4">
             <div className="font-medium text-4xl w-[20%] leading-tight text-orange-500 max-sm:w-full max-sm:text-[22px] max-sm:text-center">
               Support the children
             </div>
             <div className="w-[50%] h-1.5 bg-orange-500 max-sm:hidden"></div>
-            <div className="text-sm w-[80%] mt-5 max-sm:w-full max-sm:text-xs max-sm:text-justify max-sm:mt-0 max-sm:px-3">
+            <div className="text-sm w-[80%] max-sm:w-full max-sm:text-xs max-sm:text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               sint reprehenderit enim quam in totam. Iste blanditiis voluptate
               consequuntur earum quibusdam ipsa corrupti et eveniet repudiandae
@@ -152,7 +154,7 @@ const Home = () => {
               Donate Now
             </button>
           </div>
-          <div className="grid place-items-center max-sm:px-2.5 max-sm:mt-4">
+          <div className="flex justify-end items-center">
             <img
               src="https://www.thestatesman.com/wp-content/uploads/2017/12/Malnutrition-among-childBW.jpg0_.jpg"
               alt=""
@@ -162,6 +164,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Dont mess up with this section Tam */}
       <section
         className="w-full bg-cover bg-no-repeat"
         style={{
