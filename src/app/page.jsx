@@ -1,6 +1,4 @@
 "use client";
-"use client"; 
-import { useState } from "react";
 import { VscQuote } from "react-icons/vsc";
 import { PiHandHeart } from "react-icons/pi";
 import { TbLayoutGridAdd } from "react-icons/tb";
@@ -93,7 +91,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Dont mess up with this section Tam */}
       <section>
         <div className="bg-secondary px-12 py-4 text-white lg:px-36">
           <section className="grid grid-cols-3 mx-auto container max-sm:grid-cols-1">
@@ -108,7 +105,7 @@ const Home = () => {
               <TbLayoutGridAdd className="text-6xl" />
               <div className="py-5">
                 <div className="text-3xl font-medium">393</div>
-                <div className="">Coordination Plays</div>
+                <div className="">Coordination Plays</div> 
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -125,7 +122,7 @@ const Home = () => {
       <section className="lg:px-36 px-4">
         <div className="text-2xl font-medium text-secondary flex items-center justify-between lg:my-8 mt-4">
           Active Fundraisers
-          <div className="max-sm:hidden max-sm:flex">
+          <div className="max-sm:hidden flex">
             <button >
             <Link href="/campaign" className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"> All Campaigns <BsArrowRight /></Link>
             </button>
@@ -170,7 +167,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Dont mess up with this section Tam */}
+
       <section
         className="w-full bg-cover bg-no-repeat"
         style={{
