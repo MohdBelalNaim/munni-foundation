@@ -12,11 +12,11 @@ import {
   BsTags,
 } from "react-icons/bs";
 import { PiChartLineUp, PiHandHeart } from "react-icons/pi";
+import { useState } from "react";
 const Details = () => {
+  const [showDonate, setDonate] = useState(false);
   return (
     <>
-      <DonationCard />
-
       <Navigation />
 
       <div className="py-5 px-5 container max-sm:px-4 mx-auto max-sm:py-6">
@@ -133,7 +133,8 @@ const Details = () => {
                 <div className="w-1/2 rounded-full bg-secondary h-1"></div>
               </div>
               <div className="text-sm text-gray-500">2.9k donations</div>
-              <button className="w-full text-sm bg-secondary text-white py-3 rounded-md mt-4">
+              <button className="w-full text-sm bg-secondary text-white py-3 rounded-md mt-4" onClick={() => setDonate(!showDonate)}
+                  style={{ cursor: "pointer" }}>
                 Donate
               </button>
               <div className="mt-3 flex text-sm font-medium gap-4 items-center text-secondary">
@@ -173,6 +174,7 @@ const Details = () => {
           </div>
         </div>
       </div>
+      {showDonate == true ? <DonationCard/> : null}
 
       <Footer />
     </>
