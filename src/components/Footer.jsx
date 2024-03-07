@@ -8,6 +8,7 @@ import {
   FaFacebookSquare,
   FaTwitterSquare,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -34,8 +35,8 @@ const Footer = () => {
         <div className="lg:w-1/2 flex justify-center lg:justify-end pt-5 lg:py-0">
           <div className="mr-8">
             <h6 className="mb-4">About Us</h6>
-            <h4 className="mb-4">Campaigns</h4>
-            <h4 className="mb-4">Contact Us</h4>
+            <Link href="/campaign"><h4 className="mb-4">Campaigns</h4></Link>
+            <Link href="/contact"><h4 className="mb-4">Contact Us</h4></Link>
           </div>
           <div className="flex flex-col items-end lg:items-start ">
             <FaTwitterSquare size={24} className="mb-4 lg:mr-4" />
