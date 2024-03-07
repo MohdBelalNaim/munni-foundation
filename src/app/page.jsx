@@ -47,6 +47,9 @@ const Home = () => {
                 <div>
                   <Link href="/profile">My Profile</Link>
                 </div>
+                <div>
+                  <Link href="/create-campaign">Create Campaign</Link>
+                </div>
                 <Link href="/campaign">
                   <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
                     Donate <PiHandHeart className="text-xl" />

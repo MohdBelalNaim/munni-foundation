@@ -1,7 +1,11 @@
+"use client";
 import Navigation from "@/components/NavigationBar";
-import React from "react";
+import React, { useState } from "react";
 import { BsEye, BsPerson, BsTags } from "react-icons/bs";
 const CreateCampaign = () => {
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
+  const [story, setStory] = useState("");
   return (
     <>
       <Navigation />
@@ -16,7 +20,12 @@ const CreateCampaign = () => {
                 <label htmlFor="" className="text-sm">
                   Campaign Title
                 </label>
-                <input type="text" className="border-b py-1 w-full text-sm" />
+                <input
+                  onChange={(e) => setTitle(e.target.value)}
+                  value={title}
+                  type="text"
+                  className="border-b py-1 w-full text-sm"
+                />
               </div>
               <div className="mt-3">
                 <label htmlFor="" className="text-sm">
@@ -60,16 +69,25 @@ const CreateCampaign = () => {
                 <label htmlFor="" className="text-sm">
                   Category
                 </label>
-                <input type="text" className="border-b py-1 w-full text-sm" />
+                <input
+                  type="text"
+                  className="border-b py-1 w-full text-sm"
+                  onChange={(e) => setCategory(e.target.value)}
+                  value={category}
+                />
               </div>
               <div className="mt-3">
-                <label htmlFor="" className="text-sm">
+                <label
+                  htmlFor=""
+                  className="text-sm"
+                >
                   Story
                 </label>
                 <textarea
                   className="border-b py-1 w-full text-sm"
                   cols="30"
-                  rows="10"
+                  rows="10" onChange={(e) => setStory(e.target.value)}
+                  value={story}
                 ></textarea>
               </div>
             </div>
@@ -84,7 +102,7 @@ const CreateCampaign = () => {
               <BsEye /> This is a preview for your campaign
             </div>
             <div className="text-3xl font-medium mb-4 max-sm:mb-0 max-sm:mt-0">
-              Adamas against Neuroblastoma
+              {title == "" ? <div className="text-gray-500">Title</div> : title}
             </div>
             <div>
               <img
@@ -101,29 +119,34 @@ const CreateCampaign = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4 border-b border-gray-300 py-4 text-sm">
-                Created 5 days ago
+                Created right now
                 <span>•</span>
                 <div className="flex items-center gap-2">
-                  <BsTags size={18} /> Medical
+                  <BsTags size={18} />
+                  <div>{category == "" ? <div>Medical</div> : category}</div>
                 </div>
               </div>
               <div className="text-sm mt-5 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                dolorem atque incidunt porro ea, necessitatibus molestiae harum
-                quas distinctio officia saepe eveniet reprehenderit laborum
-                recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                incidunt porro ea, necessitatibus molestiae harum quas
-                distinctio officia saepe eveniet reprehenderit laborum
-                recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                incidunt porro ea, necessitatibus molestiae harum quas
-                distinctio officia saepe eveniet reprehenderit laborum
-                recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                incidunt porro ea, necessitatibus molestiae harum quas
-                distinctio officia saepe eveniet reprehenderit laborum
-                recusandae eligendi quae quibusdam dolor? Beatae.
+                {story == "" ? (
+                  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  dolorem atque incidunt porro ea, necessitatibus molestiae harum
+                  quas distinctio officia saepe eveniet reprehenderit laborum
+                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
+                  incidunt porro ea, necessitatibus molestiae harum quas
+                  distinctio officia saepe eveniet reprehenderit laborum
+                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
+                  incidunt porro ea, necessitatibus molestiae harum quas
+                  distinctio officia saepe eveniet reprehenderit laborum
+                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
+                  incidunt porro ea, necessitatibus molestiae harum quas
+                  distinctio officia saepe eveniet reprehenderit laborum
+                  recusandae eligendi quae quibusdam dolor? Beatae.</div>
+                ) : (
+                  story
+                )}
               </div>
             </div>
           </div>
