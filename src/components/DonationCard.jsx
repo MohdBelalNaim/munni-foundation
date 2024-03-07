@@ -8,8 +8,8 @@ function DonationCard(){
     <>
       {isVisible && (
         <div className="fixed inset-0 glass z-50 grid place-items-center">
-        <div className="bg-white rounded-md w-[min(440px,96%)]">
-        <FontAwesomeIcon icon={faTimes} onClick={() => setIsVisible(false)} className="cursor-pointer text-black font-bold px-4 pt-4" />
+        <div className="bg-white relative rounded-md w-[min(440px,96%)]">
+        <FontAwesomeIcon icon={faTimes} onClick={() => setIsVisible(false)} className="absolute cursor-pointer text-black font-bold px-4 pt-4" />
           <div className="text-lg font-medium text-center p-3 border-b">
             Choose a donation amount
           </div>
