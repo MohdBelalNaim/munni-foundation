@@ -8,6 +8,7 @@ import { FaEye } from "react-icons/fa";
 import { FaRupeeSign } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaEnvelope, FaLink } from "react-icons/fa";
 import Navigation from "@/components/NavigationBar";
+
 import EditProfile from "@/components/EditProfile";
 function Profile() {
   const [editProfile, seteditProfile] = useState(false);
@@ -18,11 +19,14 @@ function Profile() {
         <div className="lg:mx-36 relative rounded-xl overflow-hidden border border-gray-200 bg-white my-8 lg:pl-14 px-4 py-4 mx-4">
           <div className="flex justify-end lg:mr-8 absolute right-0">
             <button className="bg-secondary text-white px-8 py-2 mx-4  rounded-full max-sm:hidden" onClick={()=>seteditProfile(!editProfile)}>
+
               EDIT
             </button>
           </div>
 
+
           <div className="flex lg:gap-20 gap-5 mb-4">
+
             <img
               src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
               alt=""
@@ -31,6 +35,7 @@ function Profile() {
               className="rounded-full"
             />
             <div className="pt-8">
+
               <p className="lg:text-lg text-gray-500">Name</p>
               <p className="lg:text-xl">Sajad Ahmed</p>
             </div>
@@ -39,6 +44,7 @@ function Profile() {
           <div className="flex lg:flex-row flex-col lg:gap-14 justify-between pr-14">
             <div>
               <div className="mb-4">
+
                 <p className="lg:text-lg text-gray-500">Email</p>
                 <p className="lg:text-xl">sajadkhaki09@gmail.com</p>
               </div>
@@ -49,54 +55,63 @@ function Profile() {
               <div className="mb-4">
                 <p className="lg:text-lg text-gray-500">PAN Number</p>
                 <p className="lg:text-xl">BTLPA4771TA</p>
+
               </div>
             </div>
 
             <div>
               <div className="mb-4">
-                <p className="lg:text-lg text-gray-500">Date of Birth</p>
-                <p className="lg:text-xl">15-05-1997</p>
+
+                <p className="lg:text-sm text-gray-500">Date of Birth</p>
+                <p className="lg:text-lg">15-05-1997</p>
               </div>
               <div className="mb-4">
-                <p className="lg:text-lg text-gray-500">City of Residence</p>
-                <p className="lg:text-xl">Poonch, Jammu And Kashmir</p>
+                <p className="lg:text-sm text-gray-500">City of Residence</p>
+                <p className="lg:text-lg">Poonch, Jammu And Kashmir</p>
               </div>
               <div className="mb-4">
-                <p className="lg:text-lg text-gray-500">Aadhar Number</p>
-                <p className="lg:text-xl">**********2554</p>
+                <p className="lg:text-sm text-gray-500">Aadhar Number</p>
+                <p className="lg:text-lg">**********2554</p>
               </div>
             </div>
           </div>
 
           <div className="flex justify-center lg:hidden md:hidden">
-            <button className="bg-secondary text-white px-8 py-2 rounded-full">
+
+            <button className="bg-secondary text-white px-14 py-2 rounded-full">
               EDIT
             </button>
           </div>
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between rounded-xl overflow-hidden border border-gray-200 bg-white lg:mx-36 mx-4 mb-8 lg:px-14 px-4 py-8">
+
           <div className="flex pb-8 lg:pb-0 gap-4 items-center">
             <div>
               <FaDonate size={40} />
+
             </div>
             <div>
               <p>-</p>
               <p>Donations Made</p>
             </div>
           </div>
+
           <div className="flex pb-8 lg:pb-0 gap-4 items-center">
             <div>
               <FaRupeeSign size={40} />
+
             </div>
             <div>
               <p>-</p>
               <p>Last Donation Amount</p>
             </div>
           </div>
+
           <div className="flex gap-4 items-center">
             <div>
               <FaCalendar size={40} />
+
             </div>
             <div>
               <p>-</p>
@@ -124,6 +139,7 @@ function Profile() {
                     <a href="">Post An Update</a>
                   </p>
                   <button className="bg-red-700 text-white px-8 py-1 rounded-lg">
+
                     Expired
                   </button>
                 </div>
@@ -155,10 +171,12 @@ function Profile() {
                   <div>
                     <p className="font-bold text-xl">3</p>
                     <p className="text-sm">Views</p>
+
                   </div>
                 </div>
               </div>
             </div>
+
 
             <div className="xl:w-2/5">
               <div class="flex lg:flex-row md:flex-row flex-col justify-center gap-5 pt-4">
@@ -175,11 +193,13 @@ function Profile() {
                 </button>
               </div>
 
+
               <hr />
               <p className="my-2">
                 Keep sharing to increase your fundraiser search
               </p>
               <div className="flex justify-between mb-8">
+
                 <FaFacebook size={30} />
                 <FaInstagram size={30} />
                 <FaEnvelope size={30} />
@@ -201,6 +221,7 @@ function Profile() {
       </div>
 
       {editProfile == true ? <EditProfile/> : null}
+
     </>
   );
 }

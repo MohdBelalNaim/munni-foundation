@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+
 import { VscQuote } from "react-icons/vsc";
 import { PiHandHeart } from "react-icons/pi";
 import { TbLayoutGridAdd } from "react-icons/tb";
@@ -7,6 +8,7 @@ import { FaChild } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
+import React, { useState } from "react";
 import SignIn from "@/components/SignIn";
 import Link from "next/link";
 
@@ -43,6 +45,9 @@ const Home = () => {
                   style={{ cursor: "pointer" }}
                 >
                   Login
+                </div>
+                <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
+                  Donate <PiHandHeart className="text-xl" />
                 </div>
                 <div>
                   <Link href="/profile">My Profile</Link>
@@ -116,7 +121,7 @@ const Home = () => {
               <TbLayoutGridAdd className="text-6xl" />
               <div className="py-5">
                 <div className="text-3xl font-medium">393</div>
-                <div className="">Coordination Plays</div>
+                <div className="">Coordination Plays</div> 
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -142,6 +147,9 @@ const Home = () => {
                 {" "}
                 All Campaigns <BsArrowRight />
               </Link>
+          <div className="max-sm:hidden flex">
+            <button >
+            <Link href="/campaign" className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"> All Campaigns <BsArrowRight /></Link>
             </button>
           </div>
         </div>
@@ -155,6 +163,7 @@ const Home = () => {
           })}
         </div>
 
+
         <div className="hidden max-sm:flex mb-4 flex justify-center">
           <button>
             <Link
@@ -164,6 +173,10 @@ const Home = () => {
               {" "}
               All Campaigns <BsArrowRight />
             </Link>
+        <div className="hidden max-sm:flex mt-4 justify-center">
+          <button className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2">
+            All Campaigns <BsArrowRight />
+
           </button>
         </div>
       </section>
@@ -194,7 +207,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section
         className="w-full bg-cover bg-no-repeat"
         style={{
