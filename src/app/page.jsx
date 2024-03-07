@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { VscQuote } from "react-icons/vsc";
 import { PiHandHeart } from "react-icons/pi";
 import { TbLayoutGridAdd } from "react-icons/tb";
@@ -6,12 +7,12 @@ import { FaChild } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
-import React, { useState } from "react";
 import SignIn from "@/components/SignIn";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
+
   return (
     <>
       <section
@@ -29,9 +30,13 @@ const Home = () => {
                 <div className="text-sm">Munni Welfare Foundation</div>
               </div>
               <div className="max-sm:hidden flex lg:gap-8 gap-4 text-sm items-center">
-                <div><Link href="/">Home</Link></div>
+                <div>
+                  <Link href="/">Home</Link>
+                </div>
                 <div>About</div>
-                <div><Link href="/contact">Contact</Link></div>
+                <div>
+                  <Link href="/contact">Contact</Link>
+                </div>
                 <div>Get Involved</div>
                 <div
                   onClick={() => setShowLogin(!showLogin)}
@@ -39,9 +44,14 @@ const Home = () => {
                 >
                   Login
                 </div>
-                <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
-                  Donate <PiHandHeart className="text-xl" />
+                <div>
+                  <Link href="/profile">My Profile</Link>
                 </div>
+                <Link href="/campaign">
+                  <div className="text-secondary px-4 py-2 rounded-md text-xs  bg-primary flex items-center gap-2">
+                    Donate <PiHandHeart className="text-xl" />
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -54,10 +64,11 @@ const Home = () => {
               </div>
               <div className="text-white mt-4 text-sm w-[26%] max-sm:w-[80%]">
                 to warm a child &apos;s heart through coordinated play
+                
               </div>
-              <button className="bg-primary px-6 rounded-md mt-8 py-4 font-medium max-sm:px-3 max-sm:py-2 max-sm:text-xs">
+              <Link href="/campaign"><button className="bg-primary px-6 rounded-md mt-8 py-4 font-medium max-sm:px-3 max-sm:py-2 max-sm:text-xs">
                 Donate Now
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -105,7 +116,7 @@ const Home = () => {
               <TbLayoutGridAdd className="text-6xl" />
               <div className="py-5">
                 <div className="text-3xl font-medium">393</div>
-                <div className="">Coordination Plays</div> 
+                <div className="">Coordination Plays</div>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -122,20 +133,37 @@ const Home = () => {
       <section className="lg:px-36 px-4">
         <div className="text-2xl font-medium text-secondary flex items-center justify-between lg:my-8 mt-4">
           Active Fundraisers
-          <div className="max-sm:hidden flex">
-            <button >
-            <Link href="/campaign" className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"> All Campaigns <BsArrowRight /></Link>
+          <div className="max-sm:hidden max-sm:flex">
+            <button>
+              <Link
+                href="/campaign"
+                className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"
+              >
+                {" "}
+                All Campaigns <BsArrowRight />
+              </Link>
             </button>
           </div>
         </div>
         <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-1 lg:my-8 my-4">
           {"abc".split("").map((item, index) => {
-            return <Link href="/details" key={index}><CampaignCard key={index} index={index} /></Link>;
+            return (
+              <Link href="/details" key={index}>
+                <CampaignCard key={index} index={index} />
+              </Link>
+            );
           })}
         </div>
-        <div className="hidden max-sm:flex mt-4 justify-center">
-          <button className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2">
-            All Campaigns <BsArrowRight />
+
+        <div className="hidden max-sm:flex mb-4 flex justify-center">
+          <button>
+            <Link
+              href="/campaign"
+              className="bg-secondary text-white font-light text-sm py-2 px-4 rounded-full flex items-center gap-2"
+            >
+              {" "}
+              All Campaigns <BsArrowRight />
+            </Link>
           </button>
         </div>
       </section>
@@ -153,9 +181,9 @@ const Home = () => {
               consequuntur earum quibusdam ipsa corrupti et eveniet repudiandae
               totam consectetur, maxime ex.
             </div>
-            <button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
+            <Link href="/campaign"><button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
               Donate Now
-            </button>
+            </button></Link>
           </div>
           <div className="flex justify-end items-center">
             <img
@@ -167,7 +195,7 @@ const Home = () => {
         </div>
       </section>
 
-
+      {/* Dont mess up with this section Tam */}
       <section
         className="w-full bg-cover bg-no-repeat"
         style={{
