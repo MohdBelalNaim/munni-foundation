@@ -10,11 +10,9 @@ const Details = () => {
   const [showDonate, setDonate] = useState(false);
   return (
     <>
-      
-      
       <Navigation/>
 
-      <div className="py-5 px-5 container max-sm:px-4 lg:px-36 max-sm:py-6">
+      <div className="py-5 px-5 max-sm:px-4 lg:px-36 max-sm:py-6">
         <div className="text-3xl font-medium mt-4 mb-4 max-sm:mb-0 max-sm:mt-0">
           Adamas against Neuroblastoma
         </div>
