@@ -9,13 +9,12 @@ import { FaRupeeSign } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaEnvelope, FaLink } from "react-icons/fa";
 import Navigation from "@/components/NavigationBar";
 import EditProfile from "@/components/EditProfile";
-import EditPic from "@/components/EditPic";
+// import EditPic from "@/components/EditPic";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
 
 function Profile() {
   const [editProfile, seteditProfile] = useState(false);
-  const [editPic, seteditPic] = useState(false);
   return (
     <>
       <Navigation></Navigation>
@@ -32,7 +31,6 @@ function Profile() {
             </div>
 
             <div className="flex lg:gap-8 gap-5 mb-4">
-              <button onClick={() => seteditPic(!editPic)}>
               <img
                 src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
                 alt=""
@@ -40,7 +38,6 @@ function Profile() {
                 height="100px"
                 className="rounded-full"
               />
-              </button>
               
               <div className="pt-8">
                 <p className="xl:text-md text-gray-500 text-sm">Name</p>
@@ -267,7 +264,6 @@ function Profile() {
         </div>
       </div>
 
-      {editPic == true ? <EditPic /> : null}
       {editProfile == true ? <EditProfile /> : null}
     </>
   );

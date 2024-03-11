@@ -83,18 +83,15 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="grid place-items-center lg:container lg:w-3/5 lg:pl-36 lg:pr-8 p-4">
             <div className="bg-white-300 ">
-              <div className="text-2xl font-medium text-secondary">
+              <div className="text-2xl font-medium text-secondary pb-2">
                 Smile challenge
               </div>
-              <div className="text-sm">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestias hic quis ab tenetur natus iure sapiente eveniet
-                ducimus dolores minus impedit doloribus, obcaecati saepe laborum
-                laudantium architecto placeat enim. Reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestias hic quis
-                ab tenetur natus iure sapiente eveniet ducimus dolores minus
-                impedit doloribus, obcaecati saepe laborum laudantium architecto
-                placeat enim. Reiciendis.
+              <div className="text-sm text-justify">
+              Welcome to Munni Welfare Foundation's Smile Challenge! Join us in spreading joy and making a difference in the lives 
+              of children in need. With your support, we aim to bring smiles to countless faces by providing education, healthcare, 
+              and essential resources. Together, let's embark on this heartwarming journey of kindness and compassion. Your contribution, 
+              no matter how big or small, can brighten a child's day and create lasting positive change. Take the Smile Challenge today 
+              and be a part of something truly remarkable.
               </div>
             </div>
           </div>
@@ -107,7 +104,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="bg-secondary px-12 py-4 text-white lg:px-36">
           <section className="grid grid-cols-3 mx-auto container max-sm:grid-cols-1">
             <div className="flex items-center justify-center gap-3">
@@ -133,9 +130,9 @@ const Home = () => {
             </div>
           </section>
         </div>
-      </section>
+      </section> */}
 
-      <section className="lg:px-36 px-4">
+      {/* <section className="lg:px-36 px-4">
         <div className="text-2xl font-medium text-secondary flex items-center justify-between lg:my-8 mt-4">
           Active Fundraisers
           <div className="max-sm:hidden max-sm:flex">
@@ -171,20 +168,19 @@ const Home = () => {
             </Link>
           </button>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-orange-100">
-        <div className="grid grid-cols-2 max-sm:grid-cols-1 lg:px-36 lg:py-14 p-4">
+        <div className="grid grid-cols-2 max-sm:grid-cols-1 lg:px-36 lg:py-8 p-4">
           <div className="grid gap-y-6 max-sm:gap-y-4">
             <div className="font-medium text-4xl w-[20%] leading-tight text-orange-500 max-sm:w-full max-sm:text-[22px] max-sm:text-center">
               Support the children
             </div>
             <div className="w-[50%] h-1.5 bg-orange-500 max-sm:hidden"></div>
-            <div className="text-sm w-[80%] max-sm:w-full max-sm:text-xs max-sm:text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              sint reprehenderit enim quam in totam. Iste blanditiis voluptate
-              consequuntur earum quibusdam ipsa corrupti et eveniet repudiandae
-              totam consectetur, maxime ex.
+            <div className="text-sm w-[80%] max-sm:w-full max-sm:text-xs text-justify">
+            Join us in empowering underprivileged children with vital support. Your generosity provides tools for their flourishing. Together, 
+            let's break barriers and inspire young minds to dream, learn, and thrive. Your contribution is more than an investment; it's a testament 
+            to the transformative power of compassion. Join our cause and ignite change in the lives of these deserving children.
             </div>
             <Link href="/campaign"><button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
               Donate Now

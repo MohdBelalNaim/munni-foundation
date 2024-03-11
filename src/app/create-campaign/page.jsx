@@ -24,7 +24,7 @@ const CreateCampaign = () => {
                   onChange={(e) => setTitle(e.target.value)}
                   value={title}
                   type="text"
-                  className="border-b py-1 w-full text-sm"
+                  className="border-b py-1 px-2 w-full text-sm"
                 />
               </div>
               <div className="mt-3">
@@ -71,7 +71,7 @@ const CreateCampaign = () => {
                 </label>
                 <input
                   type="text"
-                  className="border-b py-1 w-full text-sm"
+                  className="border-b py-1 px-2 w-full text-sm"
                   onChange={(e) => setCategory(e.target.value)}
                   value={category}
                 />
@@ -84,7 +84,7 @@ const CreateCampaign = () => {
                   Story
                 </label>
                 <textarea
-                  className="border-b py-1 w-full text-sm"
+                  className="border-b py-1 px-2 w-full text-sm"
                   cols="30"
                   rows="10" onChange={(e) => setStory(e.target.value)}
                   value={story}
@@ -97,6 +97,7 @@ const CreateCampaign = () => {
               </button>
             </div>
           </div>
+
           <div className="shadow rounded p-4">
             <div className="text-xs text-gray-600 mb-3 px-2 py-1 rounded-full bg-gray-200 flex items-center gap-3 w-max">
               <BsEye /> This is a preview for your campaign
@@ -123,27 +124,12 @@ const CreateCampaign = () => {
                 <span>•</span>
                 <div className="flex items-center gap-2">
                   <BsTags size={18} />
-                  <div>{category == "" ? <div>Medical</div> : category}</div>
+                  <div>{category == "" ? <div>Category</div> : category}</div>
                 </div>
               </div>
               <div className="text-sm mt-5 leading-relaxed">
                 {story == "" ? (
-                  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  dolorem atque incidunt porro ea, necessitatibus molestiae harum
-                  quas distinctio officia saepe eveniet reprehenderit laborum
-                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                  incidunt porro ea, necessitatibus molestiae harum quas
-                  distinctio officia saepe eveniet reprehenderit laborum
-                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                  incidunt porro ea, necessitatibus molestiae harum quas
-                  distinctio officia saepe eveniet reprehenderit laborum
-                  recusandae eligendi quae quibusdam dolor? Beatae. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sed dolorem atque
-                  incidunt porro ea, necessitatibus molestiae harum quas
-                  distinctio officia saepe eveniet reprehenderit laborum
-                  recusandae eligendi quae quibusdam dolor? Beatae.</div>
+                  <div>Description</div>
                 ) : (
                   story
                 )}
