@@ -12,7 +12,7 @@ function About() {
       <div>
         <Navigation />
 
-        <div className="bg-primary py-8 rounded-b-3xl shadow-2xl shadow-gray-500 flex lg:px-36 lg:gap-14 gap-8 flex-col md:flex-row">
+        <div className="bg-primary py-8 rounded-b-3xl flex lg:px-36 lg:gap-14 gap-8 flex-col md:flex-row">
           <div className="flex flex-col md:w-2/5 gap-4 mx-4 xl:my-8">
             <div className="flex h-1/2 gap-4">
               <div className="w-1/2 overflow-hidden rounded-t-2xl rounded-bl-2xl">
@@ -60,7 +60,7 @@ function About() {
         </div>
 
         <div className="lg:mx-36">
-          <h1 className="text-center lg:mt-20 mt-14 mb-2 font-bold lg:text-xl text-lg lg:px-0 px-4">
+          <h1 className="text-center mt-14 mb-2 font-bold lg:text-xl text-lg lg:px-0 px-4">
             We found the solution for the need of the Hour
           </h1>
           <div className="flex justify-center">

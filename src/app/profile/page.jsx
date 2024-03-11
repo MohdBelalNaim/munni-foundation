@@ -9,16 +9,19 @@ import { FaRupeeSign } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaEnvelope, FaLink } from "react-icons/fa";
 import Navigation from "@/components/NavigationBar";
 import EditProfile from "@/components/EditProfile";
+import EditPic from "@/components/EditPic";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 function Profile() {
   const [editProfile, seteditProfile] = useState(false);
+  const [editPic, seteditPic] = useState(false);
   return (
     <>
       <Navigation></Navigation>
-      <div >
+      <div>
         <div className="flex justify-center w-full xl:flex-row flex-col">
-          <div className="lg:mx-36 xl:w-2/3 xl:mr-4 relative rounded-xl border border-gray-800 bg-white xl:my-8 mt-8 lg:px-14 px-4 py-8 mx-4 xl:h-[400px]">
+          <div className="lg:mx-36 xl:w-2/3 xl:mr-4 relative rounded-xl border border-gray-200 bg-white xl:my-8 mt-8 lg:px-14 px-4 py-6 mx-4 xl:h-[375px]">
             <div className="flex justify-end lg:mr-8 absolute right-0">
               <button
                 className="bg-secondary text-white px-8 py-2 mx-4 rounded-full max-sm:hidden"
@@ -28,7 +31,8 @@ function Profile() {
               </button>
             </div>
 
-            <div className="flex lg:gap-20 gap-5 mb-4">
+            <div className="flex lg:gap-8 gap-5 mb-4">
+              <button onClick={() => seteditPic(!editPic)}>
               <img
                 src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
                 alt=""
@@ -36,6 +40,8 @@ function Profile() {
                 height="100px"
                 className="rounded-full"
               />
+              </button>
+              
               <div className="pt-8">
                 <p className="xl:text-md text-gray-500 text-sm">Name</p>
                 <p className="xl:text-lg">Sajad Ahmed</p>
@@ -83,14 +89,14 @@ function Profile() {
             </div>
 
             <div className="flex justify-center lg:hidden md:hidden">
-              <button className="bg-secondary text-sm text-white px-8 py-2 rounded-full">
+              <button className="bg-secondary text-sm text-white px-8 py-2 rounded-full" onClick={() => seteditProfile(!editProfile)}>
                 EDIT
               </button>
             </div>
           </div>
 
-          <div class="lg:mx-36 xl:ml-4 relative rounded-xl border border-gray-800 bg-white lg:px-14 xl:px-4 my-8 px-4 py-2 mx-4 xl:w-1/3 xl:h-[400px]">
-            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 mt-4">
+          <div class="lg:mx-36 xl:ml-4 relative rounded-xl border border-gray-200 bg-white lg:px-14 xl:px-4 my-8 px-4 py-2 mx-4 xl:w-1/3 xl:h-[375px]">
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 lg:mt-6 mt-2">
               <div
                 style={{ width: "45%" }}
                 class="bg-blue-600 h-2.5 rounded-full"
@@ -140,7 +146,7 @@ function Profile() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-between rounded-xl overflow-hidden border border-gray-800 bg-white lg:mx-36 mx-4 mb-8 lg:px-14 px-4 py-8">
+        <div className="flex lg:flex-row flex-col justify-between rounded-xl overflow-hidden border border-gray-200 bg-white lg:mx-36 mx-4 mb-8 lg:px-14 px-4 py-8">
           <div className="flex pb-8 lg:pb-0 gap-4 items-center">
             <div>
               <FaDonate size={35} />
@@ -170,7 +176,7 @@ function Profile() {
           </div>
         </div>
 
-        <div className="lg:mx-36 rounded-xl overflow-hidden border border-gray-800 bg-white mb-8 lg:px-14 px-4 py-8 mx-4">
+        <div className="lg:mx-36 rounded-xl overflow-hidden border border-gray-200 bg-white mb-8 lg:px-14 px-4 pt-8 pb-2 mx-4">
           <div className="flex justify-center xl:flex-row flex-col xl:gap-24">
             <div className=" xl:w-3/5 ">
               <div className="flex xl:flex-row flex-col">
@@ -227,12 +233,18 @@ function Profile() {
 
             <div className="xl:w-2/5">
               <div class="flex lg:flex-row md:flex-row flex-col justify-center gap-5 pt-4">
-                <button class=" md:w-1/2 bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
-                  PERFORMANCE
-                </button>
-                <button class=" md:w-1/2 bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
-                  EDIT
-                </button>
+                <div className="md:w-1/2 ">
+                  <button class=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
+                    WITHDRAW FUNDS
+                  </button>
+                </div>
+               
+                <div className="md:w-1/2 ">
+                <Link href="/edit-campaign">
+                  <button class=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
+                    EDIT
+                  </button></Link>
+                </div>
               </div>
               <div class="flex justify-center mt-2 mb-2">
                 <button class="bg-secondary text-white lg:text-md py-2 text-sm rounded-full my-2 flex-grow">
@@ -252,17 +264,10 @@ function Profile() {
               </div>
             </div>
           </div>
-
-          <hr />
-
-          <div className="flex justify-center mt-8">
-            <button className="bg-secondary lg:text-md text-sm text-white px-14 py-2 rounded-full mb-2">
-              WITHDRAW FUNDS
-            </button>
-          </div>
         </div>
       </div>
 
+      {editPic == true ? <EditPic /> : null}
       {editProfile == true ? <EditProfile /> : null}
     </>
   );
