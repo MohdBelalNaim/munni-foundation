@@ -87,10 +87,10 @@ const Home = () => {
                 Smile challenge
               </div>
               <div className="text-sm text-justify">
-              Welcome to Munni Welfare Foundation's Smile Challenge! Join us in spreading joy and making a difference in the lives 
+              Welcome to Munni Welfare Foundation&apos;s Smile Challenge! Join us in spreading joy and making a difference in the lives 
               of children in need. With your support, we aim to bring smiles to countless faces by providing education, healthcare, 
-              and essential resources. Together, let's embark on this heartwarming journey of kindness and compassion. Your contribution, 
-              no matter how big or small, can brighten a child's day and create lasting positive change. Take the Smile Challenge today 
+              and essential resources. Together, let&apos;s embark on this heartwarming journey of kindness and compassion. Your contribution, 
+              no matter how big or small, can brighten a child&apos;s day and create lasting positive change. Take the Smile Challenge today 
               and be a part of something truly remarkable.
               </div>
             </div>
@@ -179,7 +179,7 @@ const Home = () => {
             <div className="w-[50%] h-1.5 bg-orange-500 max-sm:hidden"></div>
             <div className="text-sm w-[80%] max-sm:w-full max-sm:text-xs text-justify">
             Join us in empowering underprivileged children with vital support. Your generosity provides tools for their flourishing. Together, 
-            let's break barriers and inspire young minds to dream, learn, and thrive. Your contribution is more than an investment; it's a testament 
+            let&apos;s break barriers and inspire young minds to dream, learn, and thrive. Your contribution is more than an investment; it&apos;s a testament 
             to the transformative power of compassion. Join our cause and ignite change in the lives of these deserving children.
             </div>
             <Link href="/campaign"><button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
