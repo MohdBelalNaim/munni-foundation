@@ -17,11 +17,11 @@ function EditPic() {
             <div className="text-lg font-medium text-center p-3 border-b">
               Change Profile Photo
             </div>
-            <div  className="flex items-center gap-2 justify-center text-lg font-medium text-center text-blue-700 font-bold p-3 border-b">
+            <div  className="flex items-center gap-2 justify-center text-lg text-center text-blue-700 font-bold p-3 border-b">
                 <FaRegEdit/>
                 Upload Photo
             </div>
-            <div  className="flex items-center gap-2 justify-center text-lg font-medium text-center text-red-700 font-bold p-3">
+            <div  className="flex items-center gap-2 justify-center text-lg text-center text-red-700 font-bold p-3">
                 < AiOutlineDelete/>
                 Remove Current Photo
             </div>
