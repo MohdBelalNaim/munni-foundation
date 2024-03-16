@@ -67,29 +67,28 @@ function About() {
             <hr className="bg-yellow-300 h-[0.2rem] w-[100px]" />
           </div>
 
-          <div className="lg:pt-8 pt-4 lg:px-0 px-4 lg:text-sm text-xs">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            natus, accusantium molestias deleniti, minima itaque dolore mollitia
-            dolor nostrum ratione eveniet nisi similique nam possimus iusto sint
-            nobis hic labore eos blanditiis nemo excepturi modi. Quaerat
-            laboriosam ex delectus repellat maiores tempora soluta pariatur
-            obcaecati minus odio enim velit architecto eos harum amet deserunt
-            tenetur laudantium, incidunt voluptatum id quasi. Minima pariatur
-            voluptates suscipit cum, non corporis blanditiis consequatur, autem
-            repellendus nulla minus nesciunt harum itaque animi inventore fugiat
-            quae.
+          {/* <div className="lg:pt-8 pt-4 lg:px-0 px-4 lg:text-sm text-xs">
+            Even prior to the onset of the pandemic, it was evident that a
+            significant portion of the Indian population faced challenges in
+            affording crucial healthcare expenses, with minimal access to
+            insurance coverage for emergencies. The financial strain caused by a
+            single critical illness often resulted in families being plunged
+            into debt for years, with over 50 million Indians already pushed
+            below the poverty line due to healthcare-related costs.
+          </div> */}
+          <div className="pt-4 lg:px-0 px-4 lg:text-sm text-xs text-center">
+            In response to this pressing issue, Munni Welfare Foundation was
+            established aiming to provide a compassionate solution for
+            individuals battling critical illnesses and to empower communities
+            to support those in need. Today, our understanding has deepened
+            further. We recognize the urgent need for more accessible healthcare
+            financing options for all Indians, as health emergencies occur more
+            frequently than anticipated, and our level of preparedness is often
+            inadequate. Furthermore, we acknowledge that vulnerability to such
+            crises transcends economic status.
           </div>
-          <div className="pt-4 lg:px-0 px-4 lg:text-sm text-xs">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            natus, accusantium molestias deleniti, minima itaque dolore mollitia
-            dolor nostrum ratione eveniet nisi similique nam possimus iusto sint
-            nobis hic labore eos blanditiis nemo excepturi modi. Quaerat
-            laboriosam ex delectus repellat maiores tempora soluta pariatur
-            obcaecati minus odio enim velit architecto eos harum amet deserunt
-            tenetur laudantium, incidunt voluptatum id quasi. Minima pariatur
-            voluptates suscipit cum, non corporis blanditiis consequatur, autem
-            repellendus nulla minus nesciunt harum itaque animi inventore fugiat
-            quae.
+          <div className="pt-4 lg:px-0 px-4 lg:text-sm text-xs text-center">
+          Hence, we are expanding our efforts beyond merely providing a platform. We are committed to developing innovations that can aid not only in saving newborns, but also in supporting initiatives for child welfare. Through our endeavors, we aspire to assist individuals like farmers in securing the well-being of their children, alongside aiding professionals such as doctors who may struggle to afford critical medical care for their families.
           </div>
         </div>
 
