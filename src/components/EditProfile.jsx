@@ -34,7 +34,7 @@ function EditProfile() {
               <input
                 type="file"
                 name="photo"
-                class="w-full border p-3 text-sm"
+                className="w-full border p-3 text-sm"
               ></input>
               <input
                 type="text"

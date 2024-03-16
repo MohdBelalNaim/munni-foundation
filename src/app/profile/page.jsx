@@ -92,14 +92,14 @@ function Profile() {
             </div>
           </div>
 
-          <div class="lg:mx-36 xl:ml-4 relative rounded-xl border border-gray-200 bg-white lg:px-14 xl:px-4 my-8 px-4 py-2 mx-4 xl:w-1/3 xl:h-[375px]">
-            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 lg:mt-6 mt-2">
+          <div className="lg:mx-36 xl:ml-4 relative rounded-xl border border-gray-200 bg-white lg:px-14 xl:px-4 my-8 px-4 py-2 mx-4 xl:w-1/3 xl:h-[375px]">
+            <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 lg:mt-6 mt-2">
               <div
                 style={{ width: "45%" }}
-                class="bg-blue-600 h-2.5 rounded-full"
+                className="bg-blue-600 h-2.5 rounded-full"
               ></div>
             </div>
-            <p class="font-bold pb-2 border-b border-gray-400 text-sm">
+            <p className="font-bold pb-2 border-b border-gray-400 text-sm">
               YOUR PROFILE STRENGTH: STRONG
             </p>
             <div>
@@ -229,22 +229,22 @@ function Profile() {
             </div>
 
             <div className="xl:w-2/5">
-              <div class="flex lg:flex-row md:flex-row flex-col justify-center gap-5 pt-4">
+              <div className="flex lg:flex-row md:flex-row flex-col justify-center gap-5 pt-4">
                 <div className="md:w-1/2 ">
-                  <button class=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
+                  <button className=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
                     WITHDRAW FUNDS
                   </button>
                 </div>
                
                 <div className="md:w-1/2 ">
                 <Link href="/edit-campaign">
-                  <button class=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
+                  <button className=" w-full bg-secondary text-white lg:text-md py-2 text-sm rounded-full flex-grow">
                     EDIT
                   </button></Link>
                 </div>
               </div>
-              <div class="flex justify-center mt-2 mb-2">
-                <button class="bg-secondary text-white lg:text-md py-2 text-sm rounded-full my-2 flex-grow">
+              <div className="flex justify-center mt-2 mb-2">
+                <button className="bg-secondary text-white lg:text-md py-2 text-sm rounded-full my-2 flex-grow">
                   UPLOAD DOCUMENTS
                 </button>
               </div>

@@ -48,7 +48,7 @@ function About() {
             </div>
           </div>
 
-          <div className="md:w-3/5 lg:px-0 px-4 flex flex-col justify-center lg:gap-8 lg:gap-4 gap-2">
+          <div className="md:w-3/5 lg:px-0 px-4 flex flex-col justify-center lg:gap-8 gap-2">
             <div className="lg:text-3xl text-lg font-bold">
               Empowering ordinary people to do the extraordinary
             </div>
@@ -106,21 +106,27 @@ function About() {
                 <FaIndianRupeeSign size={30} />
                 <p className="lg:text-3xl text-2xl font-bold">1587</p>
               </div>
-              <div className="text-center lg:text-sm text-xs">Crores raised</div>
+              <div className="text-center lg:text-sm text-xs">
+                Crores raised
+              </div>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2">
                 <BiDonateHeart size={35} />
                 <p className="lg:text-3xl text-2xl font-bold">3599</p>
               </div>
-              <div className="text-center lg:text-sm text-xs">Medical Fundraisers</div>
+              <div className="text-center lg:text-sm text-xs">
+                Medical Fundraisers
+              </div>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2">
                 <RiHeartAddLine size={30} />
                 <p className="lg:text-3xl text-2xl font-bold">13452</p>
               </div>
-              <div className="text-center lg:text-sm text-xs">Other Fundraisers</div>
+              <div className="text-center lg:text-sm text-xs">
+                Other Fundraisers
+              </div>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2">
@@ -134,19 +140,23 @@ function About() {
 
         <div className="flex lg:flex-row flex-col-reverse lg:w-5/6 bg-secondary lg:rounded-r-3xl mt-20 shadow-2xl shadow-gray-500">
           <div className="lg:w-2/3 p-4 flex justify-center flex-col">
-            <h1 className="text-white text-center mb-2 md:text-xl text-base">Lorem Ipsum</h1>
+            <h1 className="text-white text-center mb-2 md:text-xl text-base">
+              Nurturing a People-Centric Culture
+            </h1>
             <div className="flex justify-center">
               <hr className="bg-yellow-300 h-[0.2rem] w-[100px]" />
             </div>
-            <p className="text-white mt-4 md:text-sm text-xs">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              rerum voluptatibus laboriosam ut praesentium sed, dolor atque
-              distinctio id nostrum quaerat exercitationem magnam aspernatur
-              odit numquam, voluptas eveniet, quis quo doloremque expedita
-              obcaecati repellat itaque possimus! Ad, ratione architecto
-              laudantium voluptatum facere, corporis fugiat hic at quia vitae,
-              molestiae odit dolores quos blanditiis eaque! Obcaecati, fugit
-              aliquam, quisquam voluptas asperiores?
+            <p className="text-white mt-4 md:text-sm text-xs text-justify">
+              Embedded within the core of our organizational culture is an
+              unwavering commitment to nurturing the holistic wellbeing of each
+              and every individual, ensuring their significance remains
+              paramount in driving our operations forward. Beyond merely
+              offering an array of benefits, perks, incentives, and recognition,
+              we ardently embrace a leadership philosophy rooted in compassion,
+              empathy, and genuine care for our team members. This approach not
+              only fosters a supportive and inclusive environment but also
+              cultivates a sense of belonging and fulfillment among our
+              workforce.
             </p>
           </div>
           <div className="flex lg:w-1/3 items-center lg:justify-end justify-center">
@@ -171,24 +181,26 @@ function About() {
             </div>
           </div>
           <div className="lg:w-2/3 p-4 flex justify-center flex-col">
-            <h1 className="text-white text-center mb-2 md:text-xl text-base">Lorem Ipsum</h1>
+            <h1 className="text-white text-center mb-2 md:text-xl text-base">
+              Embrace Continuous Growth
+            </h1>
             <div className="flex justify-center">
               <hr className="bg-yellow-300 h-[0.2rem] w-[100px]" />
             </div>
             <p className="text-white mt-4 text-justify md:text-sm text-xs">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              rerum voluptatibus laboriosam ut praesentium sed, dolor atque
-              distinctio id nostrum quaerat exercitationem magnam aspernatur
-              odit numquam, voluptas eveniet, quis quo doloremque expedita
-              obcaecati repellat itaque possimus! Ad, ratione architecto
-              laudantium voluptatum facere, corporis fugiat hic at quia vitae,
-              molestiae odit dolores quos blanditiis eaque! Obcaecati, fugit
-              aliquam, quisquam voluptas asperiores?
+              Elevate Your Professional and Personal Development Step into the
+              transformative realm of our esteemed mentorship program,
+              meticulously crafted to propel you towards unprecedented levels of
+              success and fulfillment. Rooted deeply within our values is an
+              unwavering commitment to guiding and nurturing our team members,
+              fostering an environment where their ongoing growth and triumph
+              are not merely aspirations, but integral components of our shared
+              journey towards excellence.
             </p>
           </div>
         </div>
 
-        <div className="lg:mx-36 mx-4">
+        {/* <div className="lg:mx-36 mx-4">
           <h1 className="text-center lg:mt-20 mt-4 mb-2 font-bold text-xl">Our Journey</h1>
           <div className="flex justify-center">
             <hr className="bg-yellow-300 h-[0.2rem] w-[100px]" />
@@ -196,7 +208,7 @@ function About() {
           <div className="lg:mt-14 mt-8 lg:mb-24 mb-14">
             <img src="https://s3.amazonaws.com/i.snag.gy/6o9KMs.jpg" alt="" class="w-full h-full object-cover"/>
           </div>
-        </div>
+        </div> */}
 
         <Footer />
       </div>
