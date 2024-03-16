@@ -69,11 +69,12 @@ const Home = () => {
               </div>
               <div className="text-white mt-4 text-sm w-[26%] max-sm:w-[80%]">
                 to warm a child &apos;s heart through coordinated play
-                
               </div>
-              <Link href="/campaign"><button className="bg-primary px-6 rounded-md mt-8 py-4 font-medium max-sm:px-3 max-sm:py-2 max-sm:text-xs">
-                Donate Now
-              </button></Link>
+              <Link href="/campaign">
+                <button className="bg-primary px-6 rounded-md mt-8 py-4 font-medium max-sm:px-3 max-sm:py-2 max-sm:text-xs">
+                  Donate Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -87,11 +88,16 @@ const Home = () => {
                 Smile challenge
               </div>
               <div className="text-sm text-justify">
-              Welcome to Munni Welfare Foundation&apos;s Smile Challenge! Join us in spreading joy and making a difference in the lives 
-              of children in need. With your support, we aim to bring smiles to countless faces by providing education, healthcare, 
-              and essential resources. Together, let&apos;s embark on this heartwarming journey of kindness and compassion. Your contribution, 
-              no matter how big or small, can brighten a child&apos;s day and create lasting positive change. Take the Smile Challenge today 
-              and be a part of something truly remarkable.
+                Welcome to Munni Welfare Foundation&apos;s Smile Challenge! Join
+                us in spreading joy and making a difference in the lives of
+                children in need. With your support, we aim to bring smiles to
+                countless faces by providing education, healthcare, and
+                essential resources. Together, let&apos;s embark on this
+                heartwarming journey of kindness and compassion. Your
+                contribution, no matter how big or small, can brighten a
+                child&apos;s day and create lasting positive change. Take the
+                Smile Challenge today and be a part of something truly
+                remarkable.
               </div>
             </div>
           </div>
@@ -178,13 +184,19 @@ const Home = () => {
             </div>
             <div className="w-[50%] h-1.5 bg-orange-500 max-sm:hidden"></div>
             <div className="text-sm w-[80%] max-sm:w-full max-sm:text-xs text-justify">
-            Join us in empowering underprivileged children with vital support. Your generosity provides tools for their flourishing. Together, 
-            let&apos;s break barriers and inspire young minds to dream, learn, and thrive. Your contribution is more than an investment; it&apos;s a testament 
-            to the transformative power of compassion. Join our cause and ignite change in the lives of these deserving children.
+              Join us in empowering underprivileged children with vital support.
+              Your generosity provides tools for their flourishing. Together,
+              let&apos;s break barriers and inspire young minds to dream, learn,
+              and thrive. Your contribution is more than an investment;
+              it&apos;s a testament to the transformative power of compassion.
+              Join our cause and ignite change in the lives of these deserving
+              children.
             </div>
-            <Link href="/campaign"><button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
-              Donate Now
-            </button></Link>
+            <Link href="/campaign">
+              <button className="bg-secondary text-white font-medium py-3 px-6 rounded-md w-max max-sm:hidden">
+                Donate Now
+              </button>
+            </Link>
           </div>
           <div className="flex justify-end items-center">
             <img
@@ -196,7 +208,37 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Dont mess up with this section Tam */}
+      <section className="lg:py-8 lg:px-36 p-4 bg-primary">
+        <div className="flex justify-start items-center lg:flex-row flex-col lg:gap-8 gap-0">
+          <div className="lg:w-1/3 lg:pb-0 pb-4">
+            <img
+              src="https://s3.amazonaws.com/i.snag.gy/Yq1y6B.jpg"
+              alt=""
+              className=""
+              width="300"
+            />
+          </div>
+          <div className="lg:w-2/3 text-justify md:text-base text-xs">
+            <p className="lg:pb-4 pb-2">
+            Munni Welfare Foundation is honored to announce our certification in compliance with the ISO 9000-2015 Quality Management System. This prestigious accreditation,
+              independently assessed by QRO, highlights our unwavering
+              commitment to excellence in social work. It signifies our
+              dedication to upholding the highest standards of quality
+              management across all our operations.
+            </p>
+            <p>
+              At Munni Welfare Foundation, we take great pride in this
+              accomplishment, as it reinforces our mission to make a positive difference in the lives of those we serve. This
+              certification serves as a testament to our ongoing efforts to
+              ensure transparency, accountability, and efficiency in everything
+              we do. Thank you for joining us in celebrating this achievement as
+              we continue our journey towards creating a brighter, more
+              inclusive future for all.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section
         className="w-full bg-cover bg-no-repeat"
         style={{
