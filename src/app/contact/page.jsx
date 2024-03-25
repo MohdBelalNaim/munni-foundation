@@ -39,14 +39,14 @@ function Contact() {
             <p className="lg:mx-20 mx-10">INDIA</p>
           </div>
           <hr className="bg-blue-900 h-[0.15rem] lg:w-96" />
-          <p className="my-5 text-sm">
+          <p className="my-5 lg:text-sm text-xs">
             DHANAWAN, SARWAR BAZAR, Sharmakhas, Barachatti, Gaya-824201, Bihar
           </p>
-          <p className="mb-5 text-sm">
+          <p className="mb-5 lg:text-sm text-xs">
             {" "}
             <FiMail className="inline-block mr-2" /> info@munniwelfare.org
           </p>
-          <p className="mb-5 text-sm">
+          <p className="mb-5 lg:text-sm text-xs">
             {" "}
             <FiPhone className="inline-block mr-2" /> 7739969027
           </p>
@@ -77,7 +77,7 @@ function Contact() {
       <section>
         <div className="lg:px-36 px-4 py-8 bg-primary lg:py-14">
           <p className="pb-4 lg:text-2xl text-xl">Join the conversation</p>
-          <p className="text-sm">
+          <p className="lg:text-sm text-xs">
             Join us on Facebook, Twitter, Instagram and YouTube as we share
             uplifting stories of successful fundraisers!{" "}
           </p>
