@@ -32,7 +32,7 @@ const Home = () => {
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
                 <div className="text-sm">Munni Welfare Foundation</div>
               </div>
-              <button type="button" class="md:hidden">
+              <button type="button" className="md:hidden">
                 <GiHamburgerMenu onClick={() => setshowNav(!showNav)}/>
               </button>
               

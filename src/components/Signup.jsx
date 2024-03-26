@@ -118,7 +118,7 @@ function Signup() {
       <div className="text-xs">
         <input type="checkbox" id="termsCheckbox" />
         <label htmlFor="termsCheckbox">
-          <span> </span>I'd like to receive awesome emails and updates from
+          <span> </span>I&apos;d like to receive awesome emails and updates from
           GiveUmma
         </label>
       </div>
