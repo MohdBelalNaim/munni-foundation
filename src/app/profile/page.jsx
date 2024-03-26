@@ -181,7 +181,7 @@ function Profile() {
                   <img
                     src="https://i.postimg.cc/BnM06wc8/695849-farmer-died-970.webp"
                     alt=""
-                    class="w-full sm:w-full md:w-full lg:w-full xl:w-60 xl:h-30"
+                    className="w-full sm:w-full md:w-full lg:w-full xl:w-60 xl:h-30"
                   />
                 </div>
                 <div className="xl:px-4 py-4">

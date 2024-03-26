@@ -9,9 +9,12 @@ import CampaignCard from "@/components/CampaignCard";
 import Footer from "@/components/Footer";
 import SignIn from "@/components/SignIn";
 import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
+import PhoneNav from "@/components/PhoneNav";
 
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
+  const [showNav, setshowNav] = useState(false);
 
   return (
     <>
@@ -29,6 +32,10 @@ const Home = () => {
                 <img src="/logo.svg" alt="Ni load hua" className="w-[8%]" />
                 <div className="text-sm">Munni Welfare Foundation</div>
               </div>
+              <button type="button" className="md:hidden">
+                <GiHamburgerMenu onClick={() => setshowNav(!showNav)}/>
+              </button>
+              
               <div className="max-sm:hidden flex lg:gap-8 gap-4 text-sm items-center">
                 <div>
                   <Link href="/">Home</Link>
@@ -87,7 +94,7 @@ const Home = () => {
               <div className="text-2xl font-medium text-secondary pb-2">
                 Smile challenge
               </div>
-              <div className="text-sm text-justify">
+              <div className="lg:text-sm text-xs text-justify">
                 Welcome to Munni Welfare Foundation&apos;s Smile Challenge! Join
                 us in spreading joy and making a difference in the lives of
                 children in need. With your support, we aim to bring smiles to
@@ -101,7 +108,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="text-black grid place-items-center lg:container lg:w-2/5 bg-primary lg:pr-36 py-4 px-4">
+          <div className="text-black grid place-items-center lg:container lg:w-2/5 bg-primary lg:pr-36 lg:py-4 px-4 py-8">
             <div className="text-3xl italic w-full lg:w-[52%] text-center">
               <VscQuote className="text-3xl" />
               There is so much joy you can share in this world
@@ -178,8 +185,8 @@ const Home = () => {
 
       <section className="bg-orange-100">
         <div className="grid grid-cols-2 max-sm:grid-cols-1 lg:px-36 lg:py-8 p-4">
-          <div className="grid gap-y-6 max-sm:gap-y-4">
-            <div className="font-medium text-4xl w-[20%] leading-tight text-orange-500 max-sm:w-full max-sm:text-[22px] max-sm:text-center">
+          <div className="grid gap-y-6 max-sm:gap-y-2">
+            <div className="font-medium lg:text-4xl text-2xl w-[20%] leading-tight text-orange-500 max-sm:w-full max-sm:text-[22px] max-sm:text-center">
               Support the children
             </div>
             <div className="w-[50%] h-1.5 bg-orange-500 max-sm:hidden"></div>
@@ -220,20 +227,22 @@ const Home = () => {
           </div>
           <div className="lg:w-2/3 text-justify md:text-base text-xs">
             <p className="lg:pb-4 pb-2">
-            Munni Welfare Foundation is honored to announce our certification in compliance with the ISO 9000-2015 Quality Management System. This prestigious accreditation,
-              independently assessed by QRO, highlights our unwavering
-              commitment to excellence in social work. It signifies our
-              dedication to upholding the highest standards of quality
-              management across all our operations.
+              Munni Welfare Foundation is honored to announce our certification
+              in compliance with the ISO 9000-2015 Quality Management System.
+              This prestigious accreditation, independently assessed by QRO,
+              highlights our unwavering commitment to excellence in social work.
+              It signifies our dedication to upholding the highest standards of
+              quality management across all our operations.
             </p>
             <p>
               At Munni Welfare Foundation, we take great pride in this
-              accomplishment, as it reinforces our mission to make a positive difference in the lives of those we serve. This
-              certification serves as a testament to our ongoing efforts to
-              ensure transparency, accountability, and efficiency in everything
-              we do. Thank you for joining us in celebrating this achievement as
-              we continue our journey towards creating a brighter, more
-              inclusive future for all.
+              accomplishment, as it reinforces our mission to make a positive
+              difference in the lives of those we serve. This certification
+              serves as a testament to our ongoing efforts to ensure
+              transparency, accountability, and efficiency in everything we do.
+              Thank you for joining us in celebrating this achievement as we
+              continue our journey towards creating a brighter, more inclusive
+              future for all.
             </p>
           </div>
         </div>
@@ -278,6 +287,7 @@ const Home = () => {
       </section>
 
       {showLogin == true ? <SignIn /> : null}
+      {showNav == true ? <PhoneNav /> : null}
       <Footer />
     </>
   );

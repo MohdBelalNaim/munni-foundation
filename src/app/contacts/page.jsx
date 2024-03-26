@@ -247,7 +247,7 @@ function Contact() {
               </p>
               <div className="mx-10">
                 <a
-                  class="download-btn-link"
+                  className="download-btn-link"
                   href="https://play.google.com/store/apps/details?id=org.milaap.app.android&amp;utm_source=footer&amp;utm_medium=desktop"
                 >
                   <img
@@ -259,7 +259,7 @@ function Contact() {
                   ></img>
                 </a>
                 <a
-                  class="download-btn-link"
+                  className="download-btn-link"
                   href="https://apps.apple.com/in/app/milaap/id1571562098?utm_source=footer&amp;utm_medium=desktop"
                 >
                   <img
